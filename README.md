@@ -15,6 +15,8 @@ You could use this as a way to populate a circular buffer, for example, with the
 
 Once the data is in the circular buffer, you simply read it off, for example, in a RemoteIO audio unit callback.
 
+```objc
+
 static OSStatus playbackCallback(void *inRefCon,
                                  AudioUnitRenderActionFlags *ioActionFlags,
                                  const AudioTimeStamp *inTimeStamp,
@@ -58,3 +60,5 @@ static OSStatus playbackCallback(void *inRefCon,
     
     return noErr;
 }
+
+```
